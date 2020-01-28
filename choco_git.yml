@@ -1,6 +1,8 @@
 ---
-
-- name: Install git
-  win_chocolatey:
-    name: git
-    state: present
+- name: Hello World!
+  hosts: all
+ 
+  tasks:
+ 
+  - name: Hello World!
+    shell: echo "Hi! Tower is working."
