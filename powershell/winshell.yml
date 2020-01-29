@@ -6,5 +6,6 @@
  
   - name: Run an executable and send data to the stdin for the executable
     win_command: powershell.exe
+    register: stdout_lines
     args:
-      stdin: mkdir c:\tmp
+      stdin: ls
