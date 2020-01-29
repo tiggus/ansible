@@ -9,11 +9,3 @@
     register: shellresults
     args:
       stdin: ls
-  
-  - name: process win_shell output
-    set_fact:
-      queryinfo: "{{ shellresults.stdout | from_json }}"
-
-  - name: show results
-    debug:
-      msg: shellresults {{ queryinfo }}
