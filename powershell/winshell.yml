@@ -12,4 +12,4 @@
   
   - name: Process win_shell output
     set_fact:
-      shellinfo: "{{ shellresults.stdout | from_json }}"
+      vm: "{{ shellresults.stdout | from_json }}"
