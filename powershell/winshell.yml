@@ -10,6 +10,6 @@
       stdin: ls
     register: shellresults
        
- - name: setting fact Debian lighttpd
-   set_fact:
-     cacti_web_group: "www-data"
+  - name: setting fact Debian lighttpd
+    set_fact:
+      cacti_web_group: "www-data"
