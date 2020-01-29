@@ -7,4 +7,4 @@
   - name: Run an executable and send data to the stdin for the executable
     win_command: powershell.exe
     args:
-      stdin: Write-Host test
+      stdin: mkdir c:\tmp
