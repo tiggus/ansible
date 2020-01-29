@@ -1,10 +1,10 @@
 ---
-- name: Install git
+- name: install vscode
   hosts: all
  
   tasks:
  
-  - name: Install git
+  - name: install vscode
     win_chocolatey:
-      name: git
+      name: vscode
       state: present
