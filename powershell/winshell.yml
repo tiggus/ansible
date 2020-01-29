@@ -12,4 +12,4 @@
        
   - name: setting fact shell_info
     set_fact:
-      shell_info: "www-data"
+      shell_info: "{{ shellresults.stdout | from_json }}"
