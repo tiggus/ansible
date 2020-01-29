@@ -6,14 +6,14 @@
  
   - name: run powershell
     win_command: powershell.exe
-    register: results
+    register: shellresults
     args:
       stdin: ls
   
   - name: process win_shell output
     set_fact:
-      info: "{{ results.stdout | from_json }}"
+      queryinfo: "{{ shellresults.stdout | from_json }}"
 
   - name: show results
     debug:
-      msg: results {{ info }}
+      msg: shellresults {{ queryinfo }}
