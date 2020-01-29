@@ -10,6 +10,5 @@
       stdin: ls
     register: shellresults
   
-  - name: Process win_shell output
-    set_fact:
+  - set_fact:
       vm: "{{ shellresults.stdout | from_json }}"
