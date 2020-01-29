@@ -10,6 +10,6 @@
       stdin: ls
     register: shellresults
        
-  - name: setting fact Debian lighttpd
+  - name: setting fact shell_info
     set_fact:
       shell_info: "www-data"
